@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/trains', [TrainController::class, 'index'])->name('train.index');
+Route::get('/trains', [Controller::class, 'index'])->name('train.index');
 
